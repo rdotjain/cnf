@@ -1,16 +1,7 @@
-2021-06-14 18:40:12,300,  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-2021-06-14 18:40:12,301,  * Running on http://192.168.1.200:5000/ (Press CTRL+C to quit)
-2021-06-14 18:40:29,605, Main request successful
-2021-06-14 18:40:29,607, 127.0.0.1 - - [14/Jun/2021 18:40:29] "GET /?vscodeBrowserReqId=1623676229335 HTTP/1.1" 200 -
-2021-06-14 18:40:32,941, Status request successful
-2021-06-14 18:40:32,942, 127.0.0.1 - - [14/Jun/2021 18:40:32] "GET /status?vscodeBrowserReqId=1623676232257 HTTP/1.1" 200 -
-06/14/2021 06:47:18 PM,  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-06/14/2021 06:47:18 PM,  * Running on http://192.168.1.200:5000/ (Press CTRL+C to quit)
-06/14/2021 06:47:22 PM, Main request successful
-06/14/2021 06:47:22 PM, 127.0.0.1 - - [14/Jun/2021 18:47:22] "GET /?vscodeBrowserReqId=1623676641822 HTTP/1.1" 200 -
-06/14/2021 06:47:25 PM, Metrics endpoint was reached
-06/14/2021 06:47:25 PM, 127.0.0.1 - - [14/Jun/2021 18:47:25] "GET /metrics?vscodeBrowserReqId=1623676645659 HTTP/1.1" 200 -
-06/14/2021 06:47:29 PM, Status request successful
-06/14/2021 06:47:29 PM, 127.0.0.1 - - [14/Jun/2021 18:47:29] "GET /status?vscodeBrowserReqId=1623676649235 HTTP/1.1" 200 -
+06/15/2021 10:30:51 AM,  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+06/15/2021 10:30:58 AM, / endpoint was reached
+06/15/2021 10:30:58 AM, 127.0.0.1 - - [15/Jun/2021 10:30:58] "GET /?vscodeBrowserReqId=1623733258476 HTTP/1.1" 200 -
+06/15/2021 10:31:01 AM, /status endpoint was reached
+06/15/2021 10:31:01 AM, 127.0.0.1 - - [15/Jun/2021 10:31:01] "GET /status?vscodeBrowserReqId=1623733261802 HTTP/1.1" 200 -
+06/15/2021 10:31:05 AM, /metrics endpoint was reached
+06/15/2021 10:31:05 AM, 127.0.0.1 - - [15/Jun/2021 10:31:05] "GET /metrics?vscodeBrowserReqId=1623733265700 HTTP/1.1" 200 -

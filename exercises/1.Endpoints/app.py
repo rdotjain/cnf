@@ -1,9 +1,17 @@
-from flask import Flask
+from flask import Flask, request
 from flask import json
 import logging
 
 app = Flask(__name__)
+logging.basicConfig(
+        filename="app.log",
+        level=logging.DEBUG,
+        format="%(asctime)s, %(message)s",
+        datefmt="%m/%d/%Y %I:%M:%S %p",
+    )
 
+def log():
+    app.logger.info(f"{request.path} endpoint was reached")
 
 @app.route("/status")
 def healthcheck():
@@ -12,7 +20,7 @@ def healthcheck():
         status=200,
         mimetype="application/json",
     )
-    app.logger.info("Status endpoint was reached")
+    log()
     return response
 
 
@@ -29,21 +37,15 @@ def metrics():
         status=200,
         mimetype="application/json",
     )
-    app.logger.info(f"Metrics endpoint was reached")
+    log()
     return response
 
 
 @app.route("/")
 def hello():
-    app.logger.info("Main endpoint was reached")
+    log()
     return "Hello World!"
 
 
 if __name__ == "__main__":
-    logging.basicConfig(
-        filename="app.log",
-        level=logging.DEBUG,
-        format="%(asctime)s, %(message)s",
-        datefmt="%m/%d/%Y %I:%M:%S %p",
-    )
     app.run(host="0.0.0.0")
