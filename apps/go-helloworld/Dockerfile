@@ -6,6 +6,6 @@ ADD . .
 RUN go mod init
 RUN go build -o helloworld
 
-EXPOSE 6111
+EXPOSE 6112
 
 CMD ["./helloworld"]
